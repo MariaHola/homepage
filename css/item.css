@@ -1,0 +1,53 @@
+.item {
+  flex: 33.33%;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+@media(max-width: 600px) {
+  .item {
+      margin-top: 50px;
+  }
+}
+
+@media(max-width: 600px) {
+  .item--maria {
+      order: -1;
+  }
+}
+
+.item__image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: transparent;
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;  
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes example {
+        from {top: 0px; opacity: 0;}
+        to {top: 200px; opacity: 1;}
+      }
+
+.item__title {
+    font-family: 'Noto Serif JP', serif;
+}
+
+.item__paragraph {
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    position: relative;
+        animation-name: example;
+        animation-duration: 3s;  
+        animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {top: 200px; opacity: 0;}
+  to {top: 0px; opacity: 1;}
+}
+
+   
